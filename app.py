@@ -42,7 +42,7 @@ def predict(Location, MinTemp,MaxTemp, Rainfall, Evaporation,
 
     pred = model.predict(X_input)
     prob = model.predict_proba(X_input)
-    return [pred[0], prob[0][0]]
+    return [pred[0], prob[1][0]]
 
 # Заголовок застосунку
 st.title('Weather Prediction')
