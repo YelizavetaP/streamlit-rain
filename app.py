@@ -42,7 +42,7 @@ def predict(Location, MinTemp,MaxTemp, Rainfall, Evaporation,
 
     pred = model.predict(X_input)
     prob = model.predict_proba(X_input)
-    return [pred[0], prob[1][0]]
+    return [pred[0], prob[0][1]]
 
 # Заголовок застосунку
 st.title('Weather Prediction')
@@ -138,5 +138,5 @@ if st.button("Predict"):
     else: result[0] += ':umbrella::rain_cloud:'
 
     st.write(f"Will it rain tomorrow?:  {result[0]}")
-    st.write(f"Prob:  {result[1]}")
+    st.write(f"Probability of rain:  {result[1]}")
 
