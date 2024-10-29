@@ -40,8 +40,9 @@ def predict(Location, MinTemp,MaxTemp, Rainfall, Evaporation,
 
     X_input = input_data[numeric_cols + encoded_cols]
 
-    predictions = model.predict(X_input)
-    return predictions[0]
+    pred = model.predict(X_input)
+    prob = model.predict_proba(X_input)
+    return [pred[0], prob[0]]
 
 # Заголовок застосунку
 st.title('Weather Prediction')
@@ -133,7 +134,9 @@ if st.button("Predict"):
                         Humidity3pm, Pressure9am, Pressure3pm, Cloud9am,
                         Cloud3pm, Temp9am, Temp3pm, RainToday)
     # Виводимо результат
-    if result =='No': result += ':dark_sunglasses::sunny:' 
-    else: result += ':umbrella::rain_cloud:'
+    if result[0] =='No': result[0] += ':dark_sunglasses::sunny:' 
+    else: result[0] += ':umbrella::rain_cloud:'
 
-    st.write(f"Will it rain tomorrow?:  {result}")
+    st.write(f"Will it rain tomorrow?:  {result[0]}")
+    st.write(f"Prob:  {result[1]}")
+
