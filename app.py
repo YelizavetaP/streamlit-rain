@@ -4,7 +4,7 @@ import numpy as np
 import joblib
 
 
-data = pd.read_csv('data/weatherAUS.csv')
+data = pd.read_csv('data/weather-dataset-rattle-package/weatherAUS.csv')
 features = data.columns[1:-1]
 
 
