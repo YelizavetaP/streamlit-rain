@@ -35,4 +35,4 @@ To build an automated system that can predict whether it will rain tomorrow at a
 - Joblib
 
 ## Results
-The model provides binary predictions (Yes/No) along with probability scores for rainfall prediction.
+The project demonstrates a complete machine learning workflow from data preprocessing to model deployment, focusing on a practical weather prediction problem.
