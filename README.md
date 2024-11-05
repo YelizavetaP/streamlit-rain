@@ -27,12 +27,6 @@ To build an automated system that can predict whether it will rain tomorrow at a
 - Real-time predictions based on user input
 - Visual representation of prediction results
 
-## Usage
-The model can be used for:
-- Daily rainfall predictions
-- Weather forecasting applications
-- Meteorological research
-
 ## Technologies Used
 - Python
 - Scikit-learn
