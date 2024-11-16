@@ -40,7 +40,7 @@ To build an automated system that can predict whether it will rain tomorrow at a
 
 
 ### Deployment
-- Interactive web application using Streamlit
+- Interactive ["web application using Streamlit"](https://will-it-rain-tomorrow.streamlit.app/)
 - Real-time predictions based on user input
 
 ### Obtained Results and Conclusions
