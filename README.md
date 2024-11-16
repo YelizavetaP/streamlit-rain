@@ -45,7 +45,7 @@ To build an automated system that can predict whether it will rain tomorrow at a
 
 ### Obtained Results and Conclusions
 
-he evaluation of different classification models yielded the following insights:
+The evaluation of different classification models yielded the following insights:
 
 1. **Logistic Regression**: Showed the lowest performance with ROC AUC scores of 0.61 (train) and 0.57 (val), indicating poor pattern capture.
 
